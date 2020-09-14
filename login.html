@@ -3,13 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kartu Ke-Jombloan</title>
     <link rel="stylesheet" href="asset/css/bootstrap.min.css">
     <link rel="stylesheet" href="asset/css/all.min.css">
+    <link rel="shortcut icon" href="asset/images/favicon-32x32.png" type="image/x-icon">
+    <style>
+        #vector{
+            background-image: url(asset/images/login-illustration.png);
+            background-color: rgb(207, 227, 255);
+            background-position: center;
+        }
+
+        input:focus{
+            outline: none;
+        }
+
+    </style>
+
 </head>
 <body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4" id="sidebar">
+                <!-- logo -->
+                <div class="d-flex flex-column">
+                    <img class="mt-5" width="160" height="51" src="asset/images/logo-kartu-prakerja.png" alt="logo">
+                </div>
+                <!-- login info -->
+                <div class="d-flex flex-column pt-5">
+                    <h6>Login</h6>
+                    <p class="lead">Bagi kamu yang sudah terdaftar, silakan login</p>
+                </div>
+                <!-- login form -->
+                <div class="d-flex flex-column">
+                    <form>
+                        <div class="shadow p-3">
+                            <small>Email</small>
+                            <div>
+                                <input id="font" class="border-0" type="text" placeholder="Email" style="width: 250px;">
+                            </div>
+                        </div>
+                        <div class="shadow p-3">
+                            <small>Password</small>
+                            <div>
+                                <input id="font" class="border-0 password" type="password" placeholder="Use 6 Charater or more" style="width: 250px;"> <i class="position-relative far fa-eye ml-n4" id="togglePassword"></i>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- login additional -->
+                <div class="d-flex flex-row justify-content-between">
+                    <form><input type="checkbox"><small class="ml-2">Remember me</small></form>
+                    <div>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                </div>
+                <!-- register -->
+                <div class="d-flex flex-row">
+                    <button type="button" class="btn btn-primary mr-3" aria-pressed="false">
+                        Login
+                    </button>
+                    <button type="button" class="btn btn-outline-primary" aria-pressed="false" data-toggle="modal" data-target="#exampleModal">
+                        Register
+                    </button>
+                </div>
+                <!-- footer -->
+                <div class="d-flex flex-row mt-5">
+                    
+                    Copyright &copy; 2020
+                </div>
+            </div>
+            <div class="col-8 vh-100 border" id="vector">
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row-col-2">
+                            <!-- logo -->
+                            <div class="d-flex flex-column ">
+                                <img class="mt-5" width="160" height="51" src="asset/images/logo-kartu-prakerja.png" alt="logo">
+                            </div>
+                            <!-- login info -->
+                            <div class="d-flex flex-column pt-5">
+                                <h6>Registration</h6>
+                                <p class="lead">Please fill the form.</p>
+                            </div>
+                            <!-- login form -->
+                            <div class="d-flex flex-column">
+                                <form>
+                                    <div class="shadow p-3">
+                                        <small>Email</small>
+                                        <div>
+                                            <input id="font" class="border-0" type="text" placeholder="Email" style="width: 250px;">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="shadow p-3">
+                                            <small>Password</small>
+                                            <div>
+                                                <input id="font password" class="border-0" type="password" placeholder="Use 6 Charater or more" style="width: 250px;"> <i class="position-relative far fa-eye-slash ml-n4" id="togglePassword"></i>
+                                            </div>
+                                            
+                                            <div>
+                                                <small>Password Confirmation</small>
+                                                <div>
+                                                    <input id="font" class="border-0" type="password" placeholder="Password Confirmation" style="width: 250px;"> <i class="position-relative far fa-eye-slash ml-n4"></i>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </form>
+                            </div>
+                        </div>
+                        <!-- login additional -->
+                        <div class="d-flex flex-row justify-content-between mt-5">
+                            <form>
+                                <input type="checkbox"><small class="ml-2">I Agree to the<a href="#"> Terms & Conditions</a> & the applicable <a href="#"> Privacy Policy</a>.</small>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Back</button>
+                    <button type="button" class="btn btn-primary">Register</button>
+                </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
     <script src="asset/js/jquery-3.5.1.slim.min.js"></script>
     <script src="asset/js/popper.min.js"></script>
     <script src="asset/js/bootstrap.min.js"></script>
+    <script src="asset/js/password.js"></script>
 </body>
 </html>
